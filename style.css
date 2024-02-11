@@ -1,0 +1,176 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(232, 236, 248);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 236, 248, 1) 0%,
+    rgba(232, 236, 248, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Utilities */
+.bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.exclamation {
+  border-radius: 50%;
+  color: #e8ecf8;
+  padding: 0.35rem 1rem;
+  background-color: #757882;
+}
+
+.padding-section {
+  padding: 2rem;
+}
+
+.height100 {
+  height: 100%;
+}
+
+/* Main */
+.logo {
+  height: 7.5vh;
+  width: auto;
+}
+
+main {
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.user {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+textarea {
+  font-size: 1.75rem;
+  width: 90%;
+  display: block;
+  background-color: unset;
+  border: none;
+  margin: 1.5rem auto;
+  padding: 3rem 0;
+  resize: none;
+  height: 65%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+*:disabled {
+  background-color: transparent;
+  color: #000;
+  cursor: text;
+}
+
+label {
+  font-size: 1.5rem;
+  color: #757882;
+}
+
+.flex-button {
+  gap: 2rem;
+  padding-top: 2rem;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 1.75rem;
+  border-radius: 1em;
+  padding: 0.75em 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-blue {
+  color: #fff;
+  background-color: #042c5d;
+}
+
+.button-grey {
+  color: #2c3744;
+  background-color: #e6edfa;
+  border: 1px solid #575c67;
+}
+
+/* MediaQueries */
+@media (min-width: 1080px) {
+  main {
+    width: 75%;
+    grid-template-columns: 2fr 1fr;
+  }
+  .user {
+    flex: 2;
+  }
+  textarea {
+    font-size: 2.5rem;
+    margin: 3rem auto;
+    height: 80%;
+  }
+  button {
+    font-size: 2.5rem;
+  }
+}
+
+/* Translation */
+.translation {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1em;
+  background-color: #fff;
+}
+
+/* Footer */
+footer {
+  font-size: 1.75rem;
+  height: 10vh;
+  text-align: center;
+}
+
+.icons {
+  font-size: 2.5rem;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.icons i {
+  text-shadow: 2px 2px 4px #fff;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.icons i:hover {
+  color: blue;
+}

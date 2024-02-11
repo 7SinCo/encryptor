@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css?v=10022410">
+
+
+    <title>Alura Challenge | Encrytor</title>
+</head>
+
+<body>
+
+    <main class="grid">
+
+        <div class="flex user padding-section">
+            <div class="height100">
+                <img class="logo" src="alura.png" alt="Alura">
+                <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div>
+                <label for=""><span class="exclamation">&#33;</span> Solo letras minúsculas y sin acentos</label>
+                <div class="flex flex-button">
+                    <button onclick="encrypt()" class="button-blue">Cifrar</button>
+                    <button onclick="decrypt()" class="button-grey">Descifrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex translation padding-section">
+            <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+            <button onclick="copy()" class="button-grey">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by <span class="bold">Marcial Suárez Becerril</span></p>
+        <div class="flex icons">
+            <a target="_blank" rel="noopener"
+                href="https://www.linkedin.com/in/marcial-su%C3%A1rez-becerril-00381224a/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" rel="noopener" href="https://github.com/7SinCo?tab=repositories"><i
+                    class="fa-brands fa-github"></i></a>
+            <!-- <span>|</span>
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/7sinco/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100000784001039"><i
+                    class="fa-brands fa-facebook"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="app.js?v=10022410"></script>
+</body>
+
+</html>
