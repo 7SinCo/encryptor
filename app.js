@@ -9,7 +9,7 @@ function encrypt() {
     .replaceAll("a", "ai")
     .replaceAll("o", "ober")
     .replaceAll("u", "ufat")
-    .replaceAll("ai", "aimes");
+    .replaceAll("ai", "aiimes");
   console.log(message);
 
   copyText.value = message;
@@ -22,7 +22,7 @@ function decrypt() {
     .replaceAll("ai", "a")
     .replaceAll("ober", "o")
     .replaceAll("ufat", "u")
-    .replaceAll("aimes", "ai");
+    .replaceAll("aiimes", "ai");
   console.log(message);
 
   copyText.value = message;
