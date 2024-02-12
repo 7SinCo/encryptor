@@ -34,5 +34,4 @@ function copy() {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
-  copyText.value = "";
 }
