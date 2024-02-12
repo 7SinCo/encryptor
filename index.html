@@ -17,7 +17,7 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css?v=10022420">
+    <link rel="stylesheet" href="style.css?v=10022425">
 
 
     <title>Alura Challenge | Encrytor</title>
@@ -27,7 +27,7 @@
 
     <main class="grid">
 
-        <div class="flex user padding-section">
+        <div class="flex user padding-user">
             <div class="height100">
                 <img class="logo" src="alura.png" alt="Alura">
                 <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
@@ -41,8 +41,13 @@
             </div>
         </div>
 
-        <div class="flex translation padding-section">
-            <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+        <div class="flex translation not-found padding-result">
+            <img src="not-found.png" alt="">
+            <p class="bold empty">Ningún mensaje fue encontrado</p>
+            <p class="empty-legend">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>
+        <div class="flex translation text-found display-none padding-result">
+            <textarea class="inputCopy" name="" id="" disabled></textarea>
             <button onclick="copy()" class="button-grey">Copiar</button>
         </div>
     </main>
@@ -63,7 +68,7 @@
         </div>
     </footer>
 
-    <script src="app.js?v=10022420"></script>
+    <script src="app.js?v=10022425"></script>
 </body>
 
 </html>
