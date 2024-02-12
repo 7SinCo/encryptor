@@ -68,8 +68,8 @@ body {
 
 /* Main */
 .logo {
-  height: 7.5vh;
-  width: auto;
+  width: 2.5rem;
+  height: auto;
 }
 
 main {
@@ -150,6 +150,9 @@ button {
     width: 75%;
     grid-template-rows: none;
     grid-template-columns: 2fr 1fr;
+  }
+  .logo {
+    width: 3.5rem;
   }
   .user {
     flex: 2;
