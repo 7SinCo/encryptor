@@ -13,12 +13,7 @@ html {
 }
 
 body {
-  background: rgb(232, 236, 248);
-  background: linear-gradient(
-    0deg,
-    rgba(232, 236, 248, 1) 0%,
-    rgba(232, 236, 248, 1) 100%
-  );
+  background-color: #f3f5fc;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -50,10 +45,6 @@ body {
 
 .padding-result {
   padding: 3.2rem;
-}
-
-.height100 {
-  height: 100%;
 }
 
 .display-none {
@@ -135,13 +126,14 @@ button {
 
 .button-blue {
   color: #fff;
-  background-color: #042c5d;
+  background-color: #0a3871;
+  border: none;
 }
 
 .button-grey {
-  color: #2c3744;
-  background-color: #e6edfa;
-  border: 1px solid #575c67;
+  color: #0a3871;
+  background-color: unset;
+  border: 1px solid #0a3871;
 }
 
 /* MediaQueries */
@@ -163,7 +155,7 @@ button {
     height: 80%;
   }
   button {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

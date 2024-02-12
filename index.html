@@ -16,11 +16,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Style -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css?v=10022425">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css?v=10022435">
 
+    <!-- Icon -->
+    <link rel="icon" href="src/img/icon.png">
 
-    <title>Alura Challenge | Encrytor</title>
+    <!-- Social Meta -->
+    <meta property="og:title" content="7SinCo | Encriptador de texto">
+    <meta property="og:description" content="Challenge ONE Principiante en Programación | Oracle Next Education">
+    <meta property="og:image" content="src/img/social-encryptor.png">
+    <meta property="og:image:secure_url" content="src/img/social-encryptor.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+
+    <!-- Title Page -->
+    <title>7SinCo | Encriptador de texto</title>
 </head>
 
 <body>
@@ -28,27 +39,27 @@
     <main class="grid">
 
         <div class="flex user padding-user">
-            <div class="height100">
-                <img class="logo" src="alura.png" alt="Alura">
+            <div>
+                <img class="logo" src="src/img/alura.png" alt="Alura">
                 <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
             </div>
             <div>
                 <label for=""><span class="exclamation">&#33;</span> Solo letras minúsculas y sin acentos</label>
                 <div class="flex flex-button">
-                    <button onclick="encrypt()" class="button-blue">Cifrar</button>
-                    <button onclick="decrypt()" class="button-grey">Descifrar</button>
+                    <button type="button" onclick="encrypt()" class="button-blue">Cifrar</button>
+                    <button type="button" onclick="decrypt()" class="button-grey">Descifrar</button>
                 </div>
             </div>
         </div>
 
         <div class="flex translation not-found padding-result">
-            <img src="not-found.png" alt="">
+            <img src="src/img/not-found.png" alt="">
             <p class="bold empty">Ningún mensaje fue encontrado</p>
             <p class="empty-legend">Ingresa el texto que deseas encriptar o desencriptar.</p>
         </div>
         <div class="flex translation text-found display-none padding-result">
-            <textarea class="inputCopy" name="" id="" disabled></textarea>
-            <button onclick="copy()" class="button-grey">Copiar</button>
+            <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+            <button type="button" onclick="copy()" class="button-grey">Copiar</button>
         </div>
     </main>
 
@@ -68,7 +79,7 @@
         </div>
     </footer>
 
-    <script src="app.js?v=10022425"></script>
+    <script src="src/js/app.js?v=10022435"></script>
 </body>
 
 </html>
