@@ -12,6 +12,7 @@ function encrypt() {
   console.log(message);
 
   copyText.value = message;
+  encryptText.value = "";
 }
 
 function decrypt() {
@@ -24,6 +25,7 @@ function decrypt() {
   console.log(message);
 
   copyText.value = message;
+  encryptText.value = "";
 }
 
 function copy() {
@@ -32,4 +34,5 @@ function copy() {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
+  copyText.value = "";
 }
