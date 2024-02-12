@@ -166,6 +166,7 @@ button {
 
 /* Translation */
 .translation {
+  z-index: 10;
   flex-direction: column;
   border-radius: 3.2rem;
   background-color: #fff;
