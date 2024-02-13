@@ -11,11 +11,11 @@ let message;
 function encrypt() {
   if (encryptText.value) {
     message = encryptText.value
-      .replaceAll("u", "ufat")
-      .replaceAll("o", "ober")
-      .replaceAll("i", "imes")
       .replaceAll("e", "enter")
-      .replaceAll("a", "ai");
+      .replaceAll("i", "imes")
+      .replaceAll("a", "ai")
+      .replaceAll("u", "ufat")
+      .replaceAll("o", "ober");
 
     copyText.value = message;
     encryptText.value = "";
@@ -30,11 +30,11 @@ function encrypt() {
 function decrypt() {
   if (encryptText.value) {
     message = encryptText.value
-      .replaceAll("ufat", "u")
-      .replaceAll("ober", "o")
+      .replaceAll("ai", "a")
       .replaceAll("imes", "i")
       .replaceAll("enter", "e")
-      .replaceAll("ai", "a");
+      .replaceAll("ober", "o")
+      .replaceAll("ufat", "u");
 
     copyText.value = message;
     encryptText.value = "";
