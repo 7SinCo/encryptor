@@ -139,15 +139,11 @@ button {
 /* MediaQueries */
 @media (min-width: 1080px) {
   main {
-    width: 75%;
     grid-template-rows: none;
     grid-template-columns: 2fr 1fr;
   }
   .logo {
     width: 3.5rem;
-  }
-  .user {
-    flex: 2;
   }
   textarea {
     font-size: 2.5rem;
@@ -156,6 +152,12 @@ button {
   }
   button {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 75%;
   }
 }
 
