@@ -6,7 +6,20 @@ const copyText = document.querySelector(".inputCopy");
 const textFound = document.querySelector(".text-found");
 const notFound = document.querySelector(".not-found");
 
+// Message
 let message;
+
+document.addEventListener("keyup", () => {
+  let de = "ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑÇáãàäâéëèêíïìîóöòôúüùûñç´",
+    a = "AAAAAEEEEIIIIOOOOUUUUNCaaaaaeeeeiiiioooouuuunc",
+    re = new RegExp("[" + de + "]", "ug");
+
+  encryptText.value = encryptText.value.replace(re, (match) =>
+    a.charAt(de.indexOf(match))
+  );
+
+  encryptText.value = encryptText.value.toLowerCase();
+});
 
 function encrypt() {
   if (encryptText.value) {

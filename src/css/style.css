@@ -79,7 +79,6 @@ main {
 }
 
 textarea {
-  text-transform: lowercase;
   font-size: 1.75rem;
   width: 90%;
   display: block;
